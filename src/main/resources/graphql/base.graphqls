@@ -1,0 +1,11 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+type Query {
+  testQuery:Int
+}
+
+type Mutation {
+  testMutation(flag:String):Boolean
+}

@@ -1,0 +1,11 @@
+spring:
+  mvc:
+    static-path-pattern: /**
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/graphql-java-experiments
+
+server:
+  port: 10101
+  undertow:
+    direct-buffers: true
