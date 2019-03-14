@@ -24,3 +24,5 @@ hs_err_pid*
 /target
 mvnw
 mvnw.cmd
+src/main/java/cn/nandem/graphqljavaexperiments/web/graphql/service/
+src/main/java/cn/nandem/graphqljavaexperiments/web/realtime/

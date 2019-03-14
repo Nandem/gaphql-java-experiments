@@ -9,3 +9,22 @@ server:
   port: 10101
   undertow:
     direct-buffers: true
+
+graphql:
+  tools:
+    schema-location-pattern: "**/*.graphqls"
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    # if you want to @ExceptionHandler annotation for custom GraphQLErrors
+    exception-handlers-enabled: true
+
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+    subscriptions: /subscriptions
+  subscriptions:
+    timeout: 30
+    reconnect: false
